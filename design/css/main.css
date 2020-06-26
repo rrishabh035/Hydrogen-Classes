@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color:rgb(75, 87, 255);
+    --secondary-color:rgb(245, 245, 245);
+    --third-color:#00BFA6;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: .5rem;
+    border-bottom:1px solid rgb(218, 218, 218);    
+}
+
+nav h2{
+    justify-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(14, 14, 34);
+    font-weight: 800;
+}
+
+nav h2:hover{
+    color: var(--primary-color) ;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    padding-top:.5rem;
+}
+
+nav ul li{
+    margin-right: 1rem;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:var(--primary-color);
+    display: block ;
+    font-size:1.2rem;
+}
+
+nav input{
+    height: 2rem;
+
+}
+
+nav .search-btn{
+    position: relative;
+    margin-right: 4rem;
+    padding-top: .1rem;
+}
+
+nav .search-input{
+    position: absolute;
+    right: -4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+    padding-left: .5rem;
+    outline: none;
+    border: none;
+}
+
+nav .search-input:hover{
+    background-color:rgb(216, 216, 216);
+}
+
+nav .search-input::placeholder{
+    color:rgb(75, 87, 255);
+}
+
+nav .btn{
+    height: 2rem;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* content */
+#content{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    height: 65vh;
+    margin-top: 10vh;
+}
+.container-1{
+    height: 70vh;
+}
+
+.container-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-2{
+    justify-self: center;
+    height: 70vh;
+    padding-top: 10vh;
+    align-self: center;
+}
+
+.container-2 h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container-2 p{
+    font-size: 1.1rem;
+    color: rgb(82, 82, 82);
+    margin-bottom: 20px;
+}
+
+.attractive-btn{
+    border: none;
+    outline:none;
+    padding:10px ;
+    background-color: var(--primary-color);
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.attractive-btn:hover{
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+
+/* down section */
+
+.down-nav-area{
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+.down-btn{
+    border: none;
+    outline: none;
+    width: 100px;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    font-size:2rem;
+    height: 100px;
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    
+}
+
+/* working */
+
+.working{
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding-top: 5rem;
+    clip-path: polygon(48% 3%, 100% 0, 100% 92%, 61% 100%, 0 94%, 0 16%);
+}
+
+.working h1{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+}
+
+.about-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 70px;
+}
+
+.img-feature{
+    height: 150px;
+    background: transparent;
+    justify-self:end ;
+    padding-right: 4rem;
+}
+/* .img-feature path{
+    height: 100%;
+    width: auto;
+} */
+.desc{
+    width: 65%;
+    text-align: left;
+}
+
+.desc h3{
+    font-size: 2rem;
+}
+.desc p{
+    font-size: 1.2rem;
+}
+
+/* teacher */
+#teacher{
+    width: 100vw;
+}
+
+#teacher img{
+    width: 100%;
+}
+
+.teacher-desc{
+    padding-left: 8rem;
+    width: 65%;
+}
+
+.teacher-desc .caption{
+    color: rgb(165, 165, 165);
+    font-size: 1.2rem;
+    margin-top:10px ;
+}
+
+.teacher-desc blockquote{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.highlight{
+    background-color: var(--third-color);
+    clip-path: polygon(0 11%, 100% 0, 100% 82%, 0 100%);
+
+}
+
+.teacher-desc-text{
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+.attractive-btn.big{
+    width: 300px;
+}
+
+/* course */
+#courses{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 8rem;
+}
+
+#courses img{
+    width: auto ;
+    height: 400px;
+    justify-self: center;
+}
+
+/* footer */
+
+#footer{
+    background-color: rgb(0, 5, 78);
+    color: white;
+    padding:5px;
+    padding-top: 4rem;
+}
+
+.row1{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    font-size: 1.4rem;
+}
+
+.col1{
+    padding-left: 30px;
+}
+
+.row1 ul{
+    list-style: none;
+}
+
+.row1 li{
+    margin-bottom: 1rem ;
+}
+.row1 a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+.row2{
+    margin-top: 50px;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-row2-1{
+    padding-left: 20px;
+    
+}
+
+.col-row2-2{
+    padding-left: auto;
+}
+
+.col-row2-2 i{
+    margin-right: 20px;
+}
+
+.col-row2-2 i:hover{
+    color: var(--third-color);
+}
+.red{
+    background-color: red;
+}
+
+.heart{
+    color: red;
+}
+
